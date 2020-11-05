@@ -35,7 +35,7 @@ def converter(number):
         word = block_converter(block) + ' ' + unit[index] + ', ' + word
     return word
 
-#main code
+main code
 if __name__ == '__main__':
     while True:
         try:
@@ -45,3 +45,5 @@ if __name__ == '__main__':
             print("Not a number. Input again.")
     n = (len(num) // 3 + 1) * 3 if len(num) % 3 != 0 else len(num)
     print(f'{converter(num.zfill(n))[:-2].rstrip().capitalize()}')
+
+print(block_converter('765'))

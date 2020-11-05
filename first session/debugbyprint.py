@@ -1,12 +1,12 @@
 #prime checker function 
 number = 29
-counter = 0
+factor_counter = 0
 
 for i in range(1, number+1):
     if number % i == 0:
-        counter += 1
-
-if counter == 2:
-    print(True)
+        factor_counter += 1
+    
+if factor_counter == 2:
+    print('Prime')
 else:
-    printFalse
+    print('Not Prime')
